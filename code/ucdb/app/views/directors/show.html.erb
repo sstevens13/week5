@@ -5,6 +5,16 @@
   <%= @director.name %>
 </p>
 
+<p>
+  <b>Movies:</b>
+  <ul>
+    <% @director.movies.each do |movie| %>
+      <li><%= link_to movie.title, movie %></li>
+    <% end %>
+  </ul>
+</p>
+
+
 
 <%= link_to 'Edit', edit_director_path(@director) %> |
 <%= link_to 'Back', directors_path %>
