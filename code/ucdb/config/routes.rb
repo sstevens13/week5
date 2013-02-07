@@ -1,5 +1,9 @@
 Ucdb::Application.routes.draw do
 
+  resources :movies
+
+
+  #get '/', :controller => 'directors', :action => 'index'
   root :to => 'directors#index'
 
   resources :directors

@@ -8,6 +8,7 @@ class DirectorsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @directors }
     end
+
   end
 
   # GET /directors/1
