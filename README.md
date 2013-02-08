@@ -4,7 +4,7 @@ This is the last homework assignment of the quarter!
 
 ## Requirements
 
-Create a Rails application that demonstrates a one-to-many model association as shown by going to:
+Create a Rails application that demonstrates a one-to-many model association as shown:
 
 [Click Here To See the Meetup App](http://cspp52553.com/events)
 
