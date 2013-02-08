@@ -8,12 +8,16 @@ Create a Rails application that demonstrates a one-to-many model association as 
 
 [Click Here To See the Meetup App](http://cspp52553.com/events)
 
+* The appearance/styling of your app doesn't matter.
+* The mechanics and business rules of your app should match those found in the Meetup App.
+* Your home page should show the list of events.
 * Create two resources: events and venues.
 * A venue has a name and address.
 * An event has a title, date and time, and venue.
 * HINT: Rails supports "datetime" as a column type when you generate your model/resource/scaffold that can store the date and time together in a single column.
 * A venue holds many events over time.
 * An event can only take place at one venue.
+* The list of venues must be shown in alphabetical order, both in the master list of venues as well as in any selection lists.
 * Each model must have at least one validation rule.
 * The UI should display validation error messages if the user tries to save invalid data.
 * You should use an application layout to provide a header area with global navigation links that are shared across every page.
