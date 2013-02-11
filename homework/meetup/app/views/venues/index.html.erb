@@ -9,8 +9,7 @@
     <th></th>
   </tr>
 
-# <% @venues.each do |venue| %>
-<% @(Venue.order("name asc")).each do |venue| %>
+<% @venues.each do |venue| %>
   <tr>
     <td><%= venue.name %></td>
     <td><%= venue.address %></td>
