@@ -12,9 +12,12 @@
 
 <p>
   <b>Venue:</b>
-  <%= @event.venue_id %>
+  <% begin %>
+   	<%= Venue.find(@event.venue_id)[:name] %>
+  <% rescue %>
+  	none
+  <% end %>
 </p>
-
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

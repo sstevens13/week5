@@ -15,7 +15,7 @@
     <td><%= event.title %></td>
     <td><%= event.scheduled_for %></td>
     <% begin %>
-      <td><%= Venue.find(event.venue_id) %></td>
+      <td><%= Venue.find(event.venue_id)[:name] %></td>
     <% rescue %>      
     <% end %>
     <td><%= link_to 'Show', event %></td>
